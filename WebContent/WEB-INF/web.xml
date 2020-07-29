@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>HWBAR</display-name>
+  <session-config>
+        <session-timeout>-1</session-timeout>
+    </session-config>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+     <display-name>LoginServlet</display-name>
+     <servlet-name>LoginServlet</servlet-name>
+     <servlet-class>it.controller</servlet-class>
+ </servlet>
+ <servlet>
+     <display-name>LoginDao</display-name>
+     <servlet-name>LoginDao</servlet-name>
+     <servlet-class>it.dao</servlet-class>
+ </servlet>
+ <servlet>
+     <display-name>LoginBean</display-name>
+     <servlet-name>LoginBean</servlet-name>
+     <servlet-class>it.bean</servlet-class>
+ </servlet>
+  <servlet>
+     <display-name>OrdiniUser</display-name>
+     <servlet-name>OrdiniUser</servlet-name>
+     <servlet-class>it.bean</servlet-class>
+ </servlet>
+ <servlet>
+     <display-name>connessionedb</display-name>
+     <servlet-name>connessionedb</servlet-name>
+     <servlet-class>it.util</servlet-class>
+ </servlet>
+  <servlet>
+     <display-name>RegisterServlet</display-name>
+     <servlet-name>RegisterServlet</servlet-name>
+     <servlet-class>it.controller</servlet-class>
+ </servlet>
+ <servlet>
+     <display-name>userupdate</display-name>
+     <servlet-name>userupdate</servlet-name>
+     <servlet-class>it.profilecontroll</servlet-class>
+ </servlet>
+  <servlet>
+     <display-name>CartGenerator</display-name>
+     <servlet-name>CartGenerator</servlet-name>
+     <servlet-class>it.cartcontroll</servlet-class>
+ </servlet>
+ <servlet>
+     <display-name>CartShow</display-name>
+     <servlet-name>CartShow</servlet-name>
+     <servlet-class>it.cartcontroll</servlet-class>
+ </servlet>
+   <servlet-mapping>
+     <servlet-name>CartShow</servlet-name>
+     <url-pattern>/CartShow/</url-pattern>
+ </servlet-mapping>
+  <servlet-mapping>
+     <servlet-name>CartGenerator</servlet-name>
+     <url-pattern>/CartGenerator/</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+     <servlet-name>LoginDao</servlet-name>
+     <url-pattern>/LoginDao/</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+     <servlet-name>LoginBean</servlet-name>
+     <url-pattern>/LoginBean/</url-pattern>
+ </servlet-mapping>
+  <servlet-mapping>
+     <servlet-name>OrdiniUser</servlet-name>
+     <url-pattern>/OrdiniUser/</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+     <servlet-name>connessionedb</servlet-name>
+     <url-pattern>/connessionedb/</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+     <servlet-name>RegisterServlet</servlet-name>
+     <url-pattern>/RegisterServlet/</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+     <servlet-name>LoginServlet</servlet-name>
+     <url-pattern>/LoginServlet/</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ <servlet-name>userupdate</servlet-name>
+ <url-pattern>/userupdate/</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ <servlet-name>delpayment</servlet-name>
+ <url-pattern>/delpayment/</url-pattern>
+ </servlet-mapping>
+ 
+<servlet>
+<servlet-name>OrderAdmin</servlet-name>
+<servlet-class>it.admin</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>OrderAdmin</servlet-name>
+<url-pattern>/OrderAdmin/</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>ProductAdmin</servlet-name>
+<servlet-class>it.admin</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ProductAdmin</servlet-name>
+<url-pattern>/ProductAdmin/</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+<servlet-name>Ajaxb</servlet-name>
+<servlet-class>it.admin</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Ajaxb</servlet-name>
+<url-pattern>/Ajaxb/</url-pattern>
+</servlet-mapping>
+
+
+		<servlet>
+        <servlet-name>amministrazione</servlet-name>
+        <jsp-file>/amministrazione/amministrazione.jsp</jsp-file>
+   		</servlet>
+    <servlet>
+    <servlet-name>risponditicket</servlet-name>
+        <jsp-file>/amministrazione/risponditicket.jsp</jsp-file>
+    </servlet>
+    
+     <servlet-mapping>
+        <servlet-name>amministrazione</servlet-name>
+        <url-pattern>/amministrazione/amministrazione.jsp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>risponditicket</servlet-name>
+        <url-pattern>/amministrazione/risponditicket.jsp</url-pattern>
+    </servlet-mapping> 
+	<servlet>
+        <servlet-name>profilo</servlet-name>
+        <jsp-file>/userarea/profilo.jsp</jsp-file>
+    </servlet>
+    	<servlet>
+        <servlet-name>pre-checkout</servlet-name>
+        <jsp-file>/userarea/pre-checkout.jsp</jsp-file>
+    </servlet>
+        	<servlet>
+        <servlet-name>pre-checkout2</servlet-name>
+        <jsp-file>/userarea/pre-checkout2.jsp</jsp-file>
+    </servlet>
+        	<servlet>
+        <servlet-name>pre-checkout3</servlet-name>
+        <jsp-file>/userarea/pre-checkout3.jsp</jsp-file>
+    </servlet>
+    
+	<servlet>
+        <servlet-name>usercart</servlet-name>
+        <jsp-file>/userarea/usercart.jsp</jsp-file>
+    </servlet>
+    <servlet>
+    <servlet-name>usercarthistory</servlet-name>
+        <jsp-file>/userarea/usercarthistory.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>usercarthistory</servlet-name>
+        <url-pattern>/userarea/usercarthistory.jsp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>profilo</servlet-name>
+        <url-pattern>/userarea/profilo.jsp</url-pattern>
+    </servlet-mapping>
+        <servlet-mapping>
+        <servlet-name>usercart</servlet-name>
+        <url-pattern>/userarea/usercart.jsp</url-pattern>
+    </servlet-mapping>
+             <servlet-mapping>
+        <servlet-name>pre-checkout</servlet-name>
+        <url-pattern>/userarea/pre-checkout.jsp</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>pre-checkout2</servlet-name>
+        <url-pattern>/userarea/pre-checkout2.jsp</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>pre-checkout3</servlet-name>
+        <url-pattern>/userarea/pre-checkout3.jsp</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+     <display-name>delpayment</display-name>
+     <servlet-name>delpayment</servlet-name>
+     <servlet-class>it.profilecontroll</servlet-class>
+ 	</servlet>
+    <servlet>
+     <display-name>addproduct</display-name>
+     <servlet-name>addproduct</servlet-name>
+     <servlet-class>it.controller</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+        <servlet-name>addproduct</servlet-name>
+        <url-pattern>/addproduct/</url-pattern>
+    </servlet-mapping>
+	<servlet>
+		<display-name>search</display-name>
+        <servlet-name>search</servlet-name>
+        <servlet-class>it.controller</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>search</servlet-name>
+        <url-pattern>/search/</url-pattern>
+    </servlet-mapping>
+    
+    	<servlet>
+		<display-name>showpay</display-name>
+        <servlet-name>showpay</servlet-name>
+        <servlet-class>it.profilecontroll</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>showpay</servlet-name>
+        <url-pattern>/showpay/</url-pattern>
+    </servlet-mapping>
+
+    <!-- risorsa non trovata -->
+<error-page>
+<error-code>404</error-code>
+    <location>/error.html</location>
+</error-page>
+
+    <!-- eccezione -->
+<error-page>
+    <error-code>500</error-code>
+    <location>/500-error.html</location>
+</error-page>
+
+<error-page>
+    <error-code>405</error-code>
+    <location>/500-error.html</location>
+</error-page>
+
+<login-config>
+<auth-method>FORM</auth-method>
+<realm-name>default</realm-name>
+<form-login-config>
+<form-login-page>/login.jsp</form-login-page>
+<form-error-page>/error.jsp</form-error-page>
+</form-login-config>
+</login-config>    
+    
+    
+    
+<security-constraint>
+    <web-resource-collection>
+        <web-resource-name>Protected Area</web-resource-name>
+        <url-pattern>/amministrazione/*</url-pattern>
+        <http-method>PUT</http-method>
+        <http-method>DELETE</http-method>
+        <http-method>GET</http-method>
+        <http-method>POST</http-method>
+    </web-resource-collection>
+    <auth-constraint>
+        <role-name>admin</role-name>
+    </auth-constraint>
+</security-constraint>
+
+<security-constraint>
+    <web-resource-collection>
+        <web-resource-name>Protected Area</web-resource-name>
+        <url-pattern>/userarea/*</url-pattern>
+        <http-method>PUT</http-method>
+        <http-method>DELETE</http-method>
+        <http-method>GET</http-method>
+        <http-method>POST</http-method>
+    </web-resource-collection>
+    <auth-constraint>
+        <role-name>user</role-name>
+    </auth-constraint>
+</security-constraint>
+ <!-- Ruoli -->
+<security-role>
+    <role-name>admin</role-name>
+</security-role>
+<security-role>
+    <role-name>user</role-name>
+</security-role>
+</web-app>
