@@ -1,5 +1,5 @@
 # HWBAR
-Progetto TSW 2020 Università degli Studi di Salerno 
+Progetto Tecnologie Software per il Web  2020 Università degli Studi di Salerno 
 
 Don't use this for cheat ;) °_busta_°
 
