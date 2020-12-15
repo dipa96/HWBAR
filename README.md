@@ -20,4 +20,4 @@ Donato Di Pasquale
 
 ![picture](immagini-demo/home.png)
 ----------------------------------
-![picture](img/backoffice.png)
+![picture](immagini-demo/backoffice.png)
