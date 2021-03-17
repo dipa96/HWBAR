@@ -2,7 +2,7 @@
 Progetto Tecnologie Software per il Web  2020 Università degli Studi di Salerno.
 
 • Java
-• MySQL
+• SQL(MySQL)
 • HTML
 • CSS
 • JAVASCRIPT
