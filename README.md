@@ -14,8 +14,8 @@ Progetto Tecnologie Software per il Web  2020 Università degli Studi di Salerno
 
 Don't use this for cheat.
 
-Federico Pio(https://github.com/fedepio) , 
-Donato Di Pasquale
+ Donato Di Pasquale,
+ Federico Pio(https://github.com/fedepio) 
 
 # HOMEPAGE - DEMO
 ![picture](immagini-demo/home.png)
